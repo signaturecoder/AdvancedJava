@@ -8,11 +8,10 @@ import java.sql.Statement;
 import java.util.ArrayList;
 
 import master1.DTO.FD_DTO1;
-import master1.DTO.FundTransferDTO;
 import master1.utilities.ConnectionFactory1;
 
 public class FdDAO1 {
-	 Connection cn=null;
+	    Connection cn=null;
 	    PreparedStatement ps=null;
 	    Statement st=null;
 	    ResultSet rs=null;

@@ -149,6 +149,26 @@ public class AccountDUO1 {
 	    	
 	    }
 	    
+	    public boolean checkCid(String cid)
+	    {
+	    	boolean flag=false;
+	    	String check_cid_sql="select cid from account_master where cid='"+cid+"'";
+	    	try{
+	        	ConnectionFactory1 con = new ConnectionFactory1();
+	        	cn=con.getConn();
+	        	st=cn.createStatement();
+	        	rs=st.executeQuery(check_cid_sql);
+	        	if(rs.next()){
+	        		flag=true;
+	        	}
+	        }
+	        catch(SQLException se){
+	        	se.printStackTrace();
+	        }
+	    	return flag;
+	    	
+	    }
+	    
 	    public double checkBalance(String accno)
 	    {
 	    	double balance=0.0;

@@ -99,4 +99,14 @@
     <servlet-name>RdServe1</servlet-name>
     <url-pattern>/RdServe1</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LoanServe1</display-name>
+    <servlet-name>LoanServe1</servlet-name>
+    <servlet-class>master1.servlet.LoanServe1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoanServe1</servlet-name>
+    <url-pattern>/LoanServe1</url-pattern>
+  </servlet-mapping>
 </web-app>

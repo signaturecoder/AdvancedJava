@@ -31,6 +31,7 @@ while(itr.hasNext()){
 <td><%=rddto.getSavaccno() %></td>
 <td><%=rddto.getNom() %></td>
 <td><%=rddto.getBdt() %></td>
+</tr>
 <%}%>
 </body>
 </html>
