@@ -109,4 +109,24 @@
     <servlet-name>LoanServe1</servlet-name>
     <url-pattern>/LoanServe1</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>RegisterServe1</display-name>
+    <servlet-name>RegisterServe1</servlet-name>
+    <servlet-class>master1.servlet.RegisterServe1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RegisterServe1</servlet-name>
+    <url-pattern>/RegisterServe1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>LoginServe1</display-name>
+    <servlet-name>LoginServe1</servlet-name>
+    <servlet-class>master1.servlet.LoginServe1</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>LoginServe1</servlet-name>
+    <url-pattern>/LoginServe1</url-pattern>
+  </servlet-mapping>
 </web-app>

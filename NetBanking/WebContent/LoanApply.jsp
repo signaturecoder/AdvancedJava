@@ -31,6 +31,7 @@
 <option value="10">10th</option>
 </select>
 <tr>
+<a href="AccountDetails.jsp">Details</a>
 <td><label>CID</label></td>
 <td><input type="text" name="cid"></td></tr>
 <tr>

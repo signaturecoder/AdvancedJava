@@ -19,7 +19,6 @@ public class CustomerDUO1 {
     String sql1="select * from customer_master";
     String sql2="delete from customer_master where cid=?"; 
     String sql3="update customer_master set cname=? , cphone=?, cemail=? , houseno=? , street=? , pincode=? , age=? , panno=? , occupation=? , gender=? where cid=?";
-   // String sql4="select * from customer_master where cid=?";
     public void insertData(CustomerDTO1 cdtoo){
     	try{
     		ConnectionFactory1 con = new ConnectionFactory1();
@@ -111,5 +110,23 @@ public class CustomerDUO1 {
     	}
     	return arr;
     }
+   
+      public boolean checkCid(String cid){
+    	  boolean flag = false;
+    	  String sql_checkCid = "select cid from customer_master where cid='"+cid+"'";
+    	  try{
+    		  ConnectionFactory1 con = new ConnectionFactory1();
+    		  cn=con.getConn();
+    		  st=cn.createStatement();
+    		  rs=st.executeQuery(sql_checkCid);
+    		  while(rs.next()){
+    			  flag = true;
+    		  }
+    	  }
+    	  catch(SQLException se){
+    		  se.printStackTrace();
+    	  }
+    	  return flag;
+      }
    
 }
